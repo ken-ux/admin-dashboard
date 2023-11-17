@@ -4,7 +4,7 @@ body {
     grid-template-rows: 1fr 1fr;
     margin: 0;
     gap: 1rem;
-    height: 100vh; /* take this out later */
+    height: 100vh;
 }
 header {
     background-color: lightblue;
@@ -15,6 +15,17 @@ header {
     background-color: lightyellow;
     grid-column: 1;
     grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 64px;
+    padding: 32px;
+}
+
+.sidebar > div {
+    display: grid;
+    grid-template-columns: 10px min(100px, 30%);
+    gap: 10px;
 }
 
 .main-content {
