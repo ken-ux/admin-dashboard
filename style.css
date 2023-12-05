@@ -11,6 +11,12 @@ header {
     grid-column: 2 / -1;
 }
 
+header > div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 32px;
+}
+
 .sidebar {
     background-color: lightyellow;
     grid-column: 1;
