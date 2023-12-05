@@ -41,4 +41,34 @@ header > div:last-child > div:first-child {
 
 .main-content {
     background-color: lightpink;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 32px;
+    gap: 1rem;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.cards > div {
+    background-color: white;
+    padding: 32px;
+}
+
+.announcements div:last-child {
+    background-color: white;
+}
+
+.trending div:last-child {
+    background-color: white;
 }
