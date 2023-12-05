@@ -17,6 +17,11 @@ header > div {
     padding: 32px;
 }
 
+header > div:last-child > div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
 .sidebar {
     background-color: lightyellow;
     grid-column: 1;
