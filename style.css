@@ -44,8 +44,13 @@ header > div:last-child > div:first-child {
 
 .sidebar > div {
   display: grid;
-  grid-template-columns: 10px min(100px, 30%);
-  gap: 10px;
+  grid-template-columns: 20px min(100px, 30%);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.nav-icon {
+    width: 20px;
 }
 
 .main-content {
