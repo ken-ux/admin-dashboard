@@ -51,6 +51,7 @@ header > div:last-child > div:first-child {
 
 .nav-icon {
     width: 20px;
+    filter: invert(1);
 }
 
 .main-content {
