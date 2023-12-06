@@ -1,74 +1,91 @@
+:root {
+  --blue: #1a92d3;
+  --grey: #e2e8f0;
+  --lightgrey: #919191;
+  --yellow: #eba621;
+}
+
 body {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
-    margin: 0;
-    gap: 1rem;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr;
+  margin: 0;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 header {
-    background-color: lightblue;
-    grid-column: 2 / -1;
+  background-color: white;
+  grid-column: 2 / -1;
 }
 
 header > div {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 32px;
 }
 
 header > div:last-child > div:first-child {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
-    background-color: lightyellow;
-    grid-column: 1;
-    grid-row: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: start;
-    gap: 64px;
-    padding: 32px;
+  background-color: var(--blue);
+  grid-column: 1;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  gap: 64px;
+  padding: 32px;
+  color: white;
 }
 
 .sidebar > div {
-    display: grid;
-    grid-template-columns: 10px min(100px, 30%);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 10px min(100px, 30%);
+  gap: 10px;
 }
 
 .main-content {
-    background-color: lightpink;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 32px;
-    gap: 1rem;
+  background-color: var(--grey);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 32px;
+  gap: 1rem;
 }
 
 .projects {
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .cards > div {
-    background-color: white;
-    padding: 32px;
+  background-color: white;
+  padding: 32px;
 }
 
-.announcements div:last-child {
-    background-color: white;
+.announcements > div:last-child {
+  background-color: white;
+  padding: 32px;
 }
 
-.trending div:last-child {
-    background-color: white;
+.trending > div:last-child {
+  background-color: white;
+  padding: 32px;
+}
+
+.trending > div:last-child > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
 }
