@@ -17,6 +17,7 @@ body {
 
 h1 {
   font-size: 24px;
+  margin: 0;
 }
 
 h2 {
@@ -33,6 +34,24 @@ header > div {
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 32px;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+}
+
+.search-area input {
+    margin-left: 16px;
+    background-color: var(--grey);
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+    width: 70%;
+}
+
+.search-area img {
+    height: 20px;
 }
 
 header > div:last-child > div:first-child {
