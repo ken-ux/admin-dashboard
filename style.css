@@ -218,6 +218,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  box-shadow: 2px 2px 4px lightgrey;
 }
 
 .announcements p {
@@ -229,6 +230,7 @@ button:hover {
   background-color: white;
   padding: 32px;
   border-radius: 10px;
+  box-shadow: 2px 2px 4px lightgrey;
 }
 
 .trending > div {
