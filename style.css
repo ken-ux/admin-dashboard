@@ -25,6 +25,14 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-weight: 500;
+}
+
+h4 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -163,7 +171,33 @@ button:hover {
 
 .cards > div {
   background-color: white;
-  padding: 32px;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px lightgrey;
+  border-left: 10px solid var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards p {
+  font-size: 14px;
+  padding-top: 10px;
+  color: var(--lightgrey);
+}
+
+.cards img {
+  height: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  margin-top: 32px;
+}
+
+.icons * {
+  padding-left: 16px;
 }
 
 .announcements > div:last-child {
