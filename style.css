@@ -15,10 +15,6 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 h1 {
   font-size: 24px;
   margin: 0;
@@ -29,18 +25,29 @@ h2 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
 header {
   background-color: white;
   grid-column: 2 / -1;
+  font-weight: bold;
 }
 
 header > div {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 32px;
+  margin: 32px;
 }
 
-.search-area {
+.search-area,
+.notification-area,
+.user-area {
   display: flex;
   align-items: center;
 }
@@ -54,8 +61,29 @@ header > div {
   width: 70%;
 }
 
-.search-area img {
+.search-area img,
+.notification-area img {
   height: 20px;
+}
+
+.notification-area {
+  justify-content: space-around;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+
+.notification-area .profile-picture {
+  height: 50px;
+}
+
+.user-area .profile-picture {
+  height: 100px;
+}
+
+.user-area p {
+    margin-bottom: 8px;
 }
 
 header > div:last-child > div:first-child {
