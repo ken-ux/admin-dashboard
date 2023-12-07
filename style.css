@@ -45,9 +45,15 @@ header > div {
   margin: 32px;
 }
 
+header > div:last-child > div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
 .search-area,
 .notification-area,
-.user-area {
+.user-area,
+.buttons {
   display: flex;
   align-items: center;
 }
@@ -66,7 +72,8 @@ header > div {
   height: 20px;
 }
 
-.notification-area {
+.notification-area,
+.buttons {
   justify-content: space-around;
 }
 
@@ -83,12 +90,23 @@ header > div {
 }
 
 .user-area p {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-header > div:last-child > div:first-child {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+button {
+  color: white;
+  background-color: var(--blue);
+  width: 100px;
+  padding: 12px 0;
+  border: 0;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+
+button:hover {
+  opacity: 50%;
+  transition: all 0.2s ease-out;
 }
 
 .sidebar {
