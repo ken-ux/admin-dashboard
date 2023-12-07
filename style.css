@@ -15,6 +15,10 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 24px;
   margin: 0;
@@ -37,21 +41,21 @@ header > div {
 }
 
 .search-area {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .search-area input {
-    margin-left: 16px;
-    background-color: var(--grey);
-    border-radius: 20px;
-    border: 0;
-    padding: 5px 10px;
-    width: 70%;
+  margin-left: 16px;
+  background-color: var(--grey);
+  border-radius: 20px;
+  border: 0;
+  padding: 5px 10px;
+  width: 70%;
 }
 
 .search-area img {
-    height: 20px;
+  height: 20px;
 }
 
 header > div:last-child > div:first-child {
@@ -68,6 +72,10 @@ header > div:last-child > div:first-child {
   align-content: start;
   gap: 64px;
   padding: 32px;
+  color: white;
+}
+
+.sidebar a {
   color: white;
 }
 
