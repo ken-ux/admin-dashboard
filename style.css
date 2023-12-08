@@ -130,18 +130,23 @@ button:hover {
   transition: all 0.2s ease-out;
 }
 
-.sidebar {
+.sidebar-wrapper {
   background-color: var(--blue);
   grid-column: 1;
   grid-row: 1 / -1;
+  box-shadow: 3px 0px 5px lightgrey;
+  z-index: 2;
+}
+
+.sidebar {
   display: grid;
   grid-template-columns: 1fr;
   align-content: start;
   gap: 64px;
   padding: 32px;
   color: white;
-  box-shadow: 3px 0px 5px lightgrey;
-  z-index: 2;
+  position: sticky;
+  top: 0;
 }
 
 .sidebar a {
