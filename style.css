@@ -60,13 +60,13 @@ header {
   z-index: 1;
 }
 
-header > div {
+.header-row {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 32px;
 }
 
-header > div:last-child > div:first-child {
+.header-row:last-child > div:first-child {
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
